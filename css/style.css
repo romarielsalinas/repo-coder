@@ -1,0 +1,158 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+header{ 
+    background-color: yellow;
+
+}
+ .logo1 {
+    width: 120px;
+}
+
+
+.logo2 {
+   width: 200px;
+}
+nav {
+    background-color: aqua;
+}
+nav ul{
+    margin: 0px;
+    padding: 0;
+    border-top: solid 1px black;
+}
+nav ul li { 
+    list-style: none;
+    display: inline-block;
+    margin: 0 0px 0 0;
+    padding: 10px 20px 10px 20px;
+    border-right: solid 1px black;
+
+
+}
+
+nav ul li:last-child { 
+    border-right: none;
+
+
+}
+
+nav ul li a {
+    text-decoration: none; color: brown;
+}
+
+h1 {
+    color: rgb(220, 169, 40);
+    font-size: 60px;
+}
+
+h2 {
+    color: rgb(68, 49, 3);
+    font-size: 30px;
+}
+
+p { font-size: 16px;
+
+}  
+.invitamos{
+    color: rgb(162, 77, 20); 
+    font-size: 24px;
+}
+
+footer { 
+    background-color: rgb(50, 46, 2);
+}
+
+footer p { 
+    color: rgb(249, 248, 246);
+}
+
+/* box model */
+
+.padre { 
+    background-color: black;
+    height: 300px;
+   
+}
+.hijo {
+    background-color: rgb(244, 5, 5);
+    width: 50%;
+}
+
+
+.cuadrado-color-caballo {
+    background-color: blue;
+    width: 800px;
+
+}
+
+.galeria img{
+     
+    margin: 10px 50px 20px 0;
+border-radius:50%;
+
+}
+
+
+
+@media (max-width: 428px) {
+    h1 {
+        font-size: 20px;
+    }
+  }
+
+  .contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  
+
+  .foto_grande{
+    width: 30%;
+    padding: 50px 0px;
+    
+
+  }
+  .caja1{
+    width: 70%;
+    padding: 0px 100px 0px 100px;
+
+    box-sizing: border-box;
+  }
+  .cuadrado-color{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0 100px 0;
+
+
+  }
+  .cuadrado-color h1{
+    width: 100%;
+    margin: 0;
+    padding: 0 0 80px 0;
+    text-align: center;
+  }
+
+  .cuadrado-color img{
+    width: 40%;
+ 
+  }
+
+  .caja2, .caja3{
+    width: 40%;
+
+    
+  }
+
+
