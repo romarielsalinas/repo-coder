@@ -21,6 +21,8 @@
 }
 .s1 img{
     width: 30%;
+    border-radius: 50% 0% 50% 0%;
+    padding: 0 0 0 40px;
 }
 
 .s2  {
@@ -68,7 +70,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 40px 0px;
-    margin: 50px 150px;
+    margin: 50px auto;
+    width: 70%;
 }
 .s3 h2 {
     width: 100%;
@@ -128,6 +131,56 @@
     .s1{
         flex-direction: column;
     }
+    .s1 h1{
+        text-align: center;
+    }
+
+    .s1 img{
+        width: 60%;
+    }
+
+    .galeria  {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .s2 img {
+        width: 80%;
+        margin: 0px 0px 20px 0px;
+        
+    
+    }
+    .s2 .laequinoterapia {
+        width: 80%; 
+    }
+    .s3 {
+        width: 90%;
+    }
+
+    .s3 img {
+        width: 70%;
+       
+      }
+
+      .s4{
+        
+    flex-direction: column;
+    align-items: center;
+
+     }
+     .s4 div{
+      
+    margin-bottom: 40px;
+    width: 80%; 
+
+     }
 
 
+
+    
   }
+
+
+ 
