@@ -121,13 +121,14 @@
     padding: 40px;
 }
 .carrusel h2 {
-    margin: 40px;
+    margin: 40px 0px;
 }
 .formulario {
     width: 60%;
     margin: 0 auto;
-
-
+}
+.formulario h1 {
+    padding: 20px 0px;
 }
 .formulario label {
   width: 100%;  
@@ -204,6 +205,17 @@
     width: 80%; 
 
      }
+     .carrusel{
+        width: 90%;
+      
+    }
+    .carrusel h2 {
+        font-size: 21px;
+    }
+    .formulario {
+        width: 90%;
+        margin: 0 auto;
+    }
    
 
 
