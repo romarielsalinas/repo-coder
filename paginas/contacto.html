@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAAEPAD - Contacto</title>
-
-    <link rel="stylesheet" href="../css/style.css">
+    <title>AAAEPAD - Caballos</title>
+    <!-- Còdigo Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS del sitio -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <header>
-        <img class="logo1" src= "../img/logoequinoterapia.jpeg" alt=" logo de la asociasion de equinoterapia">
-
-        
-        <nav>
-            <ul>
-                <li> <a href="../index.html">HOME</a>   </li>
-                <li> <a href= "caballos.html"> Caballo </a> </li>
-                <li> <a href= "#"> Contacto </a> </li>
-                <li> <a href= "galeria_de_imagenes.html"> Galeria de imagenes </a> </li>
-
-            </ul>
-
-
+      <!-- NAV de Bootstrap -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fondo-amarillo">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="../img/logoequinoterapia.jpeg" alt="Bootstrap" width="100" >
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="caballos.html">Caballos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-
     </header>
-    <section> 
-    <h1>CONTACTO</h1>
-    <h2>Formulario de contacto</h2>
-    <p>Completa el siguiente formulario para contactarte con nosotros.</p>
 
-    <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre"> <br>
+    <section class="formulario"> 
+      <h1>CONTACTO</h1>
+      <h2>Formulario de contacto</h2>
+      <p>Completa el siguiente formulario para contactarte con nosotros.</p>
+  
+      <form action="">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre"> <br>
+  
+          <label for="apellidp">Apellido:</label>
+          <input type="text" name="apellido" id="apellido"> <br>
+  
+          <label for="mail">Mail:</label>
+          <input type="text" name="mail" id="mail"> <br>
+  
+          <label for="comentario">Comentario:</label>
+          <textarea name="comentario" id="comentario"> </textarea> <br>
+          <input class="botonenviar" type="submit" value="Enviar">
+  
+  
+      </form> 
+      </section> 
 
-        <label for="apellidp">Apellido:</label>
-        <input type="text" name="apellido" id="apellido"> <br>
 
-        <label for="mail">Mail:</label>
-        <input type="text" name="mail" id="mail"> <br>
-
-        <label for="comentario">Comentario:</label>
-        <textarea name="comentario" id="comentario"> </textarea> <br>
-        <input type="submit" value="Enviar">
-
-
-    </form> 
-    </section> 
-    
-    <footer>
-        <p>Direccion: Av. Libertador 4489 Cap.Fed (Hipódromo de Palermo)<br>
-            Telefono: +5411 15 5037-0751 <br>
-            Mail: equinoterapia@aaaepad.org</p>
+    <footer class="footer">
+      <p>Direccion: Av. Libertador 4489 Cap.Fed (Hipódromo de Palermo)<br>
+          Telefono: +5411 15 5037-0751 <br>
+          Mail: equinoterapia@aaaepad.org</p>
     </footer>
-    
+
+  <!-- Java Script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+    
