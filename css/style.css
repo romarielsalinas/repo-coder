@@ -1,52 +1,4 @@
 @charset "UTF-8";
-/* Estilos resposive */
-@media (max-width: 768px) {
-  .s1 {
-    flex-direction: column;
-  }
-  .s1 h1 {
-    text-align: center;
-  }
-  .s1 img {
-    width: 90%;
-  }
-  .galeria {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .s2 img {
-    width: 90%;
-    margin: 0px 0px 20px 0px;
-  }
-  .s2 .laequinoterapia {
-    width: 90%;
-  }
-  .s3 {
-    width: 90%;
-  }
-  .s3 img {
-    width: 90%;
-  }
-  .s4 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .s4 div {
-    margin-bottom: 40px;
-    width: 90%;
-  }
-  .carrusel {
-    width: 90%;
-  }
-  .carrusel h2 {
-    font-size: 21px;
-  }
-  .formulario {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -59,20 +11,20 @@ body {
 }
 
 /* Section 1 */
-.flex, .s4, .s3, .galeria, .s2, .s1 {
+.section, .s4, .s3, .galeria, .s2, .s1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .s1 {
+  align-items: center;
   background-color: #ededed;
   padding: 40px;
 }
 .s1 h1 {
   width: 100%;
+  color: rgb(150, 144, 15);
 }
 .s1 img {
   width: 30%;
@@ -91,7 +43,7 @@ body {
     border-radius: 0% 50% 0% 50%;
   }
 }
-.s1.caballos img {
+.caballos img {
   padding: 0 40px 0 0;
   border-radius: 50% 0% 50% 0%;
   animation: none;
@@ -99,6 +51,7 @@ body {
 
 /* Section 2 */
 .s2 {
+  justify-content: center;
   text-align: center;
   padding: 40px;
 }
@@ -116,7 +69,6 @@ body {
 
 .galeria {
   justify-content: center;
-  flex-wrap: wrap;
   margin: 40px 0px;
 }
 
@@ -125,22 +77,24 @@ body {
   background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(161, 70, 252) 100%);
   color: #fff;
   justify-content: space-evenly;
-  padding: 40px 0px;
+  padding: 20px 0px;
   margin: 50px auto;
   width: 70%;
 }
 .s3 h2 {
   width: 100%;
   text-align: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
 }
 .s3 img {
   width: 30%;
   height: fit-content;
-  margin: 10px;
+  margin: 20px 10px;
 }
 .s3 p {
   width: 60%;
-  margin: 10px;
+  margin: 20px 10px 0 10px;
 }
 
 /* Section 4 */
@@ -215,6 +169,62 @@ body {
 /* Estilos extras Boostrap */
 .fondo-amarillo {
   background: linear-gradient(90deg, rgb(150, 144, 15) 0%, rgb(249, 245, 36) 100%);
+}
+
+/* Estilos resposive */
+@media (max-width: 768px) {
+  .s1 {
+    flex-direction: column;
+  }
+  .s1 h1 {
+    text-align: center;
+  }
+  .s1 img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .s1 .titulo3 {
+    width: 100%;
+  }
+  .caballos img {
+    margin-bottom: 20px;
+  }
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .s2 img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .s2 .laequinoterapia {
+    width: 100%;
+  }
+  .s3 {
+    width: 90%;
+  }
+  .s3 img, .s3 p {
+    width: 90%;
+  }
+  .s4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s4 div {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+  .carrusel {
+    width: 100%;
+  }
+  .carrusel h2 {
+    font-size: 21px;
+  }
+  .formulario {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

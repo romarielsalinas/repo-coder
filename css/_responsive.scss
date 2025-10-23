@@ -10,8 +10,17 @@
         }
     
         img{
-            width: 90%;
+            width: 100%;
+            margin-top: 20px;
         }
+
+        .titulo3 {
+            width: 100%;
+        }
+    }
+
+    .caballos img {
+        margin-bottom: 20px;
     }
 
     .galeria {
@@ -22,19 +31,19 @@
 
     .s2 {
         img {
-            width: 90%;
+            width: 100%;
             margin: 0px 0px 20px 0px;
         }
 
         .laequinoterapia {
-            width: 90%; 
+            width: 100%; 
         }
     }
     
     .s3 {
         width: 90%;
 
-        img {
+        img, p {
             width: 90%;
         }
     }
@@ -50,7 +59,7 @@
      }
 
     .carrusel {
-        width: 90%;
+        width: 100%;
 
         h2 {
             font-size: 21px;
