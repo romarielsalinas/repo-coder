@@ -1,0 +1,10 @@
+$primary-color: rgba(249, 245, 36, 1);
+$secondary-color: rgba(150, 144, 15, 1);
+$dark-color: #000;
+$light-color: #fff;
+$gray: #ededed;
+$blue: rgba(63, 94, 251, 1);
+$violet: rgba(161, 70, 252, 1);
+
+$primary-gradient: linear-gradient(90deg, $secondary-color 0%, $primary-color 100%);
+$secondary-gradient: radial-gradient(circle, $blue 0%, $violet 100%);

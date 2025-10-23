@@ -1,239 +1,220 @@
-/* Section 1 */
-
-.s1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+@charset "UTF-8";
+/* Estilos resposive */
+@media (max-width: 768px) {
+  .s1 {
+    flex-direction: column;
+  }
+  .s1 h1 {
+    text-align: center;
+  }
+  .s1 img {
+    width: 90%;
+  }
+  .galeria {
+    flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
-    padding: 40px;
-}
-
-.s1 h1{
     width: 100%;
+  }
+  .s2 img {
+    width: 90%;
+    margin: 0px 0px 20px 0px;
+  }
+  .s2 .laequinoterapia {
+    width: 90%;
+  }
+  .s3 {
+    width: 90%;
+  }
+  .s3 img {
+    width: 90%;
+  }
+  .s4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s4 div {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+  .carrusel {
+    width: 90%;
+  }
+  .carrusel h2 {
+    font-size: 21px;
+  }
+  .formulario {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.s1 .titulo3{
-    width: 70%;
+body {
+  color: #000;
+  font-family: "Roboto", sans-serif;
 }
 
-.s1 img{
-    width: 30%;
+/* Section 1 */
+.flex, .s4, .s3, .galeria, .s2, .s1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.s1 {
+  background-color: #ededed;
+  padding: 40px;
+}
+.s1 h1 {
+  width: 100%;
+}
+.s1 img {
+  width: 30%;
+  padding: 0 0 0 40px;
+  animation: fotoanimada 4s infinite ease-in-out alternate;
+}
+.s1 .titulo3 {
+  width: 70%;
+}
+
+@keyframes fotoanimada {
+  0% {
     border-radius: 50% 0% 50% 0%;
-    padding: 0 0 0 40px;
+  }
+  100% {
+    border-radius: 0% 50% 0% 50%;
+  }
 }
-
-.s1.caballos img{
-    padding: 0 40px 0 0; 
+.s1.caballos img {
+  padding: 0 40px 0 0;
+  border-radius: 50% 0% 50% 0%;
+  animation: none;
 }
 
 /* Section 2 */
-
-.s2  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center; 
-    text-align: center;  
-    padding: 40px;
-    
+.s2 {
+  text-align: center;
+  padding: 40px;
 }
-
-.s2 h2{
-    width: 100%;
+.s2 h2 {
+  width: 100%;
 }
-
-.galeria  {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
-    margin: 40px 0px;
-}
-
 .s2 img {
-    width: 20%;
-    margin: 0px 20px;
+  width: 20%;
+  margin: 0px 20px;
+}
+.s2 p {
+  width: 40%;
+  text-align: center;
 }
 
-.s2 p{
-    width: 40%;
-    text-align: center
+.galeria {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0px;
 }
 
 /* Section 3 */
-
 .s3 {
-    background-color: rgb(100, 84, 126);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 40px 0px;
-    margin: 50px auto;
-    width: 70%;
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(161, 70, 252) 100%);
+  color: #fff;
+  justify-content: space-evenly;
+  padding: 40px 0px;
+  margin: 50px auto;
+  width: 70%;
 }
-
 .s3 h2 {
-    width: 100%;
-    text-align: center;      
+  width: 100%;
+  text-align: center;
 }
-
 .s3 img {
-  width: 20%;
+  width: 30%;
   height: fit-content;
-  margin: 10px; 
+  margin: 10px;
 }
-
 .s3 p {
-    width: 60%;
-    margin: 10px;
+  width: 60%;
+  margin: 10px;
 }
 
 /* Section 4 */
-
 .s4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .s4 div {
-    background-color: rgb(243, 240, 160);
-    padding: 10px;
-    width: 20%;   
+  background-color: rgb(249, 245, 36);
+  padding: 10px;
+  width: 20%;
 }
-
-.s4 img{
-    width: 100%;
+.s4 .container-img {
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 0;
 }
-
-.s4 img:hover{
-    opacity: 0.5;
+.s4 .container-img img {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.s4 .container-img img:hover {
+  transform: scale(1.5);
 }
 
 /* Página Caballos */
-
-.carrusel{
-    width: 60%;
-    margin: 0 auto;
-    padding: 40px;
+.carrusel {
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px;
 }
-
 .carrusel h2 {
-    margin: 40px 0px;
+  margin: 40px 0px;
 }
 
 /* Página Contacto */
-
 .formulario {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
-
 .formulario h1 {
-    padding: 20px 0px;
+  padding: 20px 0px;
 }
-
 .formulario label {
-  width: 100%;  
-
+  width: 100%;
 }
-
 .formulario input {
-    width: 100%;
-    background-color: #ededed;
-    border: solid 1px black;
-    border-radius: 10px;
+  width: 100%;
+  background-color: #ededed;
+  border: solid 1px #000;
+  border-radius: 10px;
 }
-
 .formulario textarea {
-    width: 100%;
-    background-color: #ededed;
-    border: solid 1px black;
-    border-radius: 10px;
+  width: 100%;
+  background-color: #ededed;
+  border: solid 1px #000;
+  border-radius: 10px;
 }
 
-.botonenviar  {
-    width: 150px !important;
+.botonenviar {
+  width: 150px !important;
 }
 
 /* Footer */
-
 .footer {
-    background-color: rgb(249, 245, 36);
-    padding: 20px;
-    margin: 40px 0px 0px 0px;
+  background: linear-gradient(90deg, rgb(150, 144, 15) 0%, rgb(249, 245, 36) 100%);
+  padding: 20px;
+  margin: 40px 0px 0px 0px;
 }
 
 /* Estilos extras Boostrap */
-
-.fondo-amarillo{
-    background-color: yellow !important;
+.fondo-amarillo {
+  background: linear-gradient(90deg, rgb(150, 144, 15) 0%, rgb(249, 245, 36) 100%);
 }
 
-/* Estilos resposive */
-
-@media (max-width: 768px) {
-    .s1{
-        flex-direction: column;
-    }
-
-    .s1 h1{
-        text-align: center;
-    }
-
-    .s1 img{
-        width: 60%;
-    }
-
-    .galeria  {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .s2 img {
-        width: 80%;
-        margin: 0px 0px 20px 0px;
-    }
-
-    .s2 .laequinoterapia {
-        width: 80%; 
-    }
-
-    .s3 {
-        width: 90%;
-    }
-
-    .s3 img {
-        width: 70%;
-      }
-
-    .s4{    
-        flex-direction: column;
-        align-items: center;
-     }
-
-    .s4 div{
-        margin-bottom: 40px;
-        width: 80%; 
-     }
-
-    .carrusel{
-        width: 90%;
-    }
-
-    .carrusel h2 {
-        font-size: 21px;
-    }
-
-    .formulario {
-        width: 90%;
-        margin: 0 auto;
-    }    
-}
-
-
- 
+/*# sourceMappingURL=style.css.map */

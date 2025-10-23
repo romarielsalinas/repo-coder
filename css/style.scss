@@ -1,0 +1,209 @@
+@import 'variables';
+@import 'responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:$dark-color;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Section 1 */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center; 
+}
+
+.s1 {
+    @extend .flex;
+    background-color: $gray;
+    padding: 40px;
+
+    h1 {
+        width: 100%;
+    }
+
+    img {
+        width: 30%;
+        padding: 0 0 0 40px;
+        animation: fotoanimada 4s infinite ease-in-out alternate;
+    }
+
+    .titulo3 {
+        width: 70%;
+    }
+}
+
+  @keyframes fotoanimada {
+    0% {
+        border-radius: 50% 0% 50% 0%;
+    }
+    100% {
+        border-radius: 0% 50% 0% 50%;
+    }
+  }
+
+.s1.caballos img {
+    padding: 0 40px 0 0;
+    border-radius: 50% 0% 50% 0%;
+    animation: none;
+}
+
+/* Section 2 */
+
+.s2 {
+    @extend .flex;
+    text-align: center;  
+    padding: 40px;
+
+    h2 {
+        width: 100%;
+    }
+
+    img {
+        width: 20%;
+        margin: 0px 20px;
+    }
+
+    p {
+        width: 40%;
+        text-align: center
+    }
+    
+}
+
+.galeria {
+    @extend .flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+
+
+/* Section 3 */
+
+.s3 {
+    background: $secondary-gradient;
+    color: $light-color;
+    @extend .flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    margin: 50px auto;
+    width: 70%;
+
+    h2 {
+        width: 100%;
+        text-align: center;      
+    }
+    
+    img {
+      width: 30%;
+      height: fit-content;
+      margin: 10px; 
+    }
+    
+    p {
+        width: 60%;
+        margin: 10px;
+    }
+}
+
+/* Section 4 */
+
+.s4 {
+    @extend .flex;
+    justify-content: space-evenly;
+
+    div {
+        background-color: $primary-color;
+        padding: 10px;
+        width: 20%;   
+    }
+
+    .container-img {
+        width: 100%;
+        height: 135px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 0;
+    
+        img {
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+        }
+
+        img:hover{
+            transform: scale(1.5); 
+        }
+    }
+    
+}
+
+/* Página Caballos */
+
+.carrusel {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+
+    h2 {
+        margin: 40px 0px;
+    }
+}
+
+/* Página Contacto */
+
+.formulario {
+    width: 60%;
+    margin: 0 auto;
+
+    h1 {
+        padding: 20px 0px;
+    }
+    
+    label {
+      width: 100%;  
+    
+    }
+    
+    input {
+        width: 100%;
+        background-color: $gray;
+        border: solid 1px $dark-color;
+        border-radius: 10px;
+    }
+    
+    textarea {
+        width: 100%;
+        background-color: $gray;
+        border: solid 1px $dark-color;
+        border-radius: 10px;
+    }
+}
+
+.botonenviar {
+    width: 150px !important;
+}
+
+/* Footer */
+
+.footer {
+    background: $primary-gradient;
+    padding: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+/* Estilos extras Boostrap */
+
+.fondo-amarillo {
+    background: $primary-gradient;
+}
+
